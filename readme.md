@@ -127,7 +127,7 @@ meson test -C <build dir name> --num-processes
 ```
 
 ## Installing
-Installing the built software with Meosn is just as simple as.
+Installing the built software with Meson is just as simple as.
 
 ```console
 meson install -C <build dir name>
