@@ -1,0 +1,63 @@
+#####################################################
+# FILE NAME .gitignore                              #
+#                                                   #
+# PURPOSE List the items git needs to ignore.       #
+#                                                   #
+#####################################################
+
+
+##
+#
+# Git: Ignore following build folders
+#
+##
+
+##
+# : Backend Generator for Xcode (IDE)
+##
+/build-xcode
+
+##
+# : Backend Generator for Visual Studios (IDE)
+##
+/build-vs
+/build-vs2010
+/build-vs2015
+/build-vs2017
+/build-vs2019
+
+##
+# : If using GNOME Builder for meson projects
+##
+/build-gnome
+
+##
+# : If using Eclipse (IDE) for meson projects
+##
+/build-eclipse
+
+##
+# : Backend Generator for Ninja on other platforms
+##
+/build-unix
+/build-linux
+/build-mingw
+
+
+
+##
+#
+# Git: Ignore other folders 
+#
+##
+
+##
+# :Files
+##
+.DS_Store
+
+##
+# :Cargo Files
+##
+/target
+**/*.rs.bk

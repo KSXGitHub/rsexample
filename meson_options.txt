@@ -1,0 +1,70 @@
+###################################################################################
+#                                                                                 #
+# NAME: meson_options.txt                                                         #
+#                                                                                 #
+# AUTHOR: Michael Brockus.                                                        #
+#                                                                                 #
+# CONTACT: <michael@squidfarts.com>                                               #
+#                                                                                 #
+# NOTICES:                                                                        #
+#                                                                                 #
+# MIT License                                                                     #
+#                                                                                 #
+# Copyright (c) 2019 Micheal Brockus                                              #
+#                                                                                 #
+# Permission is hereby granted, free of charge, to any person obtaining a copy    #
+# of this software and associated documentation files (the "Software"), to deal   #
+# in the Software without restriction, including without limitation the rights    #
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell       #
+# copies of the Software, and to permit persons to whom the Software is           #
+# furnished to do so, subject to the following conditions:                        #
+#                                                                                 #
+# The above copyright notice and this permission notice shall be included in all  #
+# copies or substantial portions of the Software.                                 #
+#                                                                                 #
+# DISCLAIMERS:                                                                    #
+#                                                                                 #
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR      #
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,        #
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE     #
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER          #
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,   #
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE   #
+# SOFTWARE.                                                                       #
+#                                                                                 #
+###################################################################################
+
+
+
+##
+#
+# Meson: Target options installing items.
+#
+##
+option('install_exe', type : 'boolean', value : true , description: 'Install exe')
+option('install_doc', type : 'boolean', value : false, description: 'Install docs')
+
+
+
+##
+#
+# Meson: Target options feature.
+#
+##
+option('use_threads', type : 'feature', value : 'disabled', description: 'Enable link with threads.')
+option('use_python3', type : 'feature', value : 'disabled', description: 'Enable link with python3.')
+option('use_libmath', type : 'feature', value : 'disabled', description: 'Enable link with m.')
+
+
+
+##
+#
+# Meson: Target options for compiler flags.
+#
+##
+option('let_werror', type : 'boolean', value : true, description: 'Enable werror compiler flag.')
+
+
+
+
+
